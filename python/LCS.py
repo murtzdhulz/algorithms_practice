@@ -3,7 +3,7 @@ __author__ = 'Murtaza'
 def LCS(X,Y):
     n=len(X)
     m=len(Y)
-    L=[[0]*(m+1) for i in xrange(n+1)]
+    L=[[0]*(m+1) for _ in xrange(n+1)]
     # print 'Initial matrix:',L
     # L[n][m]=1
     # print L

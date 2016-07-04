@@ -13,9 +13,27 @@ def LCS(X,Y):
                 L[i][j]=max(L[i-1][j],L[i][j-1])
             else:
                 L[i][j]=L[i-1][j-1]+1
-    return L[n][m]
+    print 'The LCS string is:'
+    print_LCS(L,X,Y,n,m)
+    print
+    print 'Length of LCS is:',L[n][m]
+
+def print_LCS(L,X,Y,i,j):
+    # print 'In Print:',i,j
+    if L[i][j]==0:
+        return
+    if X[i-1]==Y[j-1]:
+        print_LCS(L,X,Y,i-1,j-1)
+        print X[i-1],
+        return
+    if X[i-1]!=Y[j-1] and L[i][j]==L[i-1][j]:
+        print_LCS(L,X,Y,i-1,j)
+        return
+    if X[i-1]!=Y[j-1] and L[i][j]==L[i][j-1]:
+        print_LCS(L,X,Y,i,j-1)
+        return
 
 X='BCDBCDA'
 Y='ABECBA'
 
-print LCS(X,Y)
+LCS(X,Y)

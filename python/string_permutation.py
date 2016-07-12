@@ -19,8 +19,6 @@ def string_permute2(s,n):
             string_permute2(s,n-1)
             s[i],s[n]=s[n],s[i]
 
-
-
 string='ABC'
 string_permute1(list(string),0,len(string)-1)
 print

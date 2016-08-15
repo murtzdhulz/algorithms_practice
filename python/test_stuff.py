@@ -7,4 +7,8 @@ def bitwise():
     print int('11',2)<<3
     print bin(0b11<<3)
 
+l='hi'
+l+='ho'
+print l
+
 bitwise()

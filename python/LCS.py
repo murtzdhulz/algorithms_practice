@@ -17,6 +17,8 @@ def LCSubsequence(X,Y):
     print_LCSubsequence(L,X,Y,n,m)
     print
     print 'Length of LCSubsequence is:',L[n][m]
+    for line in L:
+        print line
 
 def LCSubstring(X,Y):
     n=len(X)

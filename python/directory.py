@@ -47,6 +47,7 @@ def getPaths2(dir):
         cur_line=line.strip()
         level=len(line)-len(cur_line)
 
+        # Pop everything up until the level at which you want to push
         while(len(dir_arr)!=level):
             dir_arr.pop()
 

@@ -1,4 +1,5 @@
 __author__ = 'Murtaza'
+# Refer to the Poweret Script
 
 def subsets(p):
    n=len(p)
@@ -6,7 +7,7 @@ def subsets(p):
    while i<(1<<n):
        # print bin(i)
        cur_set='{'
-       for j in range(n):
+       for j in range(i):
            if (i & (1<<j)) > 0:
                # print p[j]
                cur_set=cur_set+p[j]+','

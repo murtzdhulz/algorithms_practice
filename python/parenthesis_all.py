@@ -10,6 +10,7 @@ def parenthesis_recurse(result,left_rem,right_rem,str):
     if left_rem==0 and right_rem==0:
         result.append(''.join(str))
     else:
+        #In recursion whatever is put in the current iteration is what you pop off immediately
         if left_rem>0:
             str.append('(')
             parenthesis_recurse(result,left_rem-1,right_rem,str)
@@ -20,4 +21,4 @@ def parenthesis_recurse(result,left_rem,right_rem,str):
             str.pop()
     return result
 
-print parenthesis_recurse([],3,3,[])
+print parenthesis_recurse([],2,2,[])

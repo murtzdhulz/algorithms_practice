@@ -47,3 +47,15 @@ v=g.vert_list[1]    # Getting the vertex which has key = 1
 # t=bfs_main(g)   -- This can be called when you have multiple connected components
 t=bfs(g,v)
 print "BFS traversal:",t
+
+# Some testing
+# print "Call to iter"
+# for e in g:
+#     print e
+#     print type(e)
+# print
+# print
+# k = g.get_vertices()
+# for e in k:
+#     print e
+#     print type(e)

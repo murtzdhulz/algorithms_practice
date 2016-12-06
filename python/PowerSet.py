@@ -25,5 +25,6 @@ class PowerSet:
 
 ans = PowerSet()
 print ans.powerSet1([1,2,3])
-print ans.powerSet1(['a','b','c','d'])
+print ans.powerSet2([1,2,3])
+# print ans.powerSet1(['a','b','c','d'])
 

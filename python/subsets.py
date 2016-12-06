@@ -1,5 +1,5 @@
 __author__ = 'Murtaza'
-# Refer to the Poweret Script
+# Refer to the Powerset Script
 
 def subsets(p):
    n=len(p)

@@ -15,10 +15,13 @@ class add_one:
         A.reverse()
         digits.reverse()
 
-        if not digits[0]:
-            for i in range(n-1):
-                if not digits[0]:
-                    digits=digits[1:]
+        # print "Before cleanup:",digits
+
+        for i in range(n-1):
+            if not digits[0]:
+                digits=digits[1:]
+            else:
+                break
 
         return digits
 

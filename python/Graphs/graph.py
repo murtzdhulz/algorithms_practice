@@ -3,6 +3,8 @@ class Vertex:
         self.id = key
         self.connected_to = {}
         self.visited = False
+        # Will be used in some scenarios 0-univisited, 1-processing, 2-processed
+        self.state=0
 
     def add_neighbor(self,nbr,weight=0):
         self.connected_to[nbr] = weight
@@ -20,6 +22,13 @@ class Vertex:
         return str(self.id) + ' connected to: ' + str([x.id for x in self.connected_to])
 
 class Graph:
+    """
+    The structure is:
+    Graph consists of a dictionary of keys (integer values)
+    Each key maps to a Vertex object
+    Vertex object has a connected_to dictionary which has keys as other Vertex objects and vale as the weight measure
+    """
+
     def __init__(self):
         self.vert_list={}
         self.num_vertices=0

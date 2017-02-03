@@ -26,6 +26,7 @@ def lca_optimal(root,a,b):
                \
                21
     :return:
+    Just try doing dry run with a=11 and b=21 - It will be easy to verify
     """
     if root==None:
         return None,False

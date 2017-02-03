@@ -34,7 +34,13 @@ def LCSubstring(X,Y):
             else:
                 L[i][j]=L[i-1][j-1]+1
 
-    print 'Length of LCSubstring is:',L[n][m]
+    max=0
+    for val in L:
+        for each_val in val:
+            if each_val>max:
+                max=each_val
+
+    print 'Length of LCSubstring is:',max
 
 def print_LCSubsequence(L,X,Y,i,j):
     # print 'In Print:',i,j
@@ -53,9 +59,8 @@ def print_LCSubsequence(L,X,Y,i,j):
 
 X='BCDBCDA'
 Y='ABECBA'
-
 LCSubsequence(X,Y)
 
 X='BCDBCDA'
-Y='ABECDA'
+Y='ABECDAPL'
 LCSubstring(X,Y)

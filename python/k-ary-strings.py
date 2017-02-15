@@ -13,14 +13,15 @@ def mainStrings(n,k):
 
 print mainStrings(7,2)
 
-for s in mainStrings(7,2):
-    cur_l=list(int(s_cur) for s_cur in s)
-    cur_sum=0
-    for val in cur_l:
-        cur_sum+=val
-    if cur_sum%2==0:
-        cur_l.append(0)
-    else:
-        cur_l.append(1)
-
-    print cur_l
+# Generating XOR data
+# for s in mainStrings(7,2):
+#     cur_l=list(int(s_cur) for s_cur in s)
+#     cur_sum=0
+#     for val in cur_l:
+#         cur_sum+=val
+#     if cur_sum%2==0:
+#         cur_l.append(0)
+#     else:
+#         cur_l.append(1)
+#
+#     print cur_l

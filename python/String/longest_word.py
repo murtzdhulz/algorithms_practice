@@ -8,7 +8,7 @@ def longest_word(string_arr):
 
     string_arr.sort(key=lambda s:len(s),reverse=True)
     for s in string_arr:
-        # print "Processing String:",s
+        print "Processing String:",s
         if canbuildword(s,True,map):
             return s
 

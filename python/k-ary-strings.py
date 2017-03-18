@@ -11,7 +11,7 @@ def mainStrings(n,k):
     if n==1: return rangeToList(k)
     return [digit+bitstring for digit in mainStrings(1,k) for bitstring in mainStrings(n-1,k)]
 
-print mainStrings(7,2)
+print mainStrings(3,2)
 
 # Generating XOR data
 # for s in mainStrings(7,2):

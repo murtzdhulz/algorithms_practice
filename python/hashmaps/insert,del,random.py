@@ -34,15 +34,32 @@ class randmomized_set():
     # def increment_count(self,v):
     #     self.count+=v
     #     return self.count
+#
+# o=randmomized_set()
+# o.insert(55)
+# o.insert(11)
+# o.insert(99)
+# print o.index_map
+# print o.value_map
+# print
+# o.remove(55)
+# print o.index_map
+# print o.value_map
+# print
+# o.remove(11)
+# print o.index_map
+# print o.value_map
+# print
+# print o.get_random()
 
 o=randmomized_set()
-o.insert(55)
-o.insert(11)
+o.insert(0)
+o.insert(0)
 o.insert(99)
 print o.index_map
 print o.value_map
 print
-o.remove(55)
+o.remove(0)
 print o.index_map
 print o.value_map
 print

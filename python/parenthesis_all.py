@@ -11,7 +11,7 @@ def parenthesis_recurse(result,left_rem,right_rem,str):
         result.append(''.join(str))
         # print "All done here"
     else:
-        #In recursion whatever is put in the current iteration is what you pop off immediately
+        # In recursion whatever is put in the current iteration is what you pop off immediately
         if left_rem>0:
             # print "putting ("
             str.append('(')

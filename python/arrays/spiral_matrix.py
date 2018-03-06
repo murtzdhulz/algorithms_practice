@@ -48,10 +48,7 @@ class Solution(object):
         while r1 <= r2 and c1 <= c2:
             for r, c in get_coords(r1, r2, c1, c2):
                 ans.append(matrix[r][c])
-            r1 += 1;
-            r2 -= 1;
-            c1 += 1;
-            c2 -= 1
+            r1 += 1; r2 -= 1; c1 += 1; c2 -= 1
         return ans
 
 """

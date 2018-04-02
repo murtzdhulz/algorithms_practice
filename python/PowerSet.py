@@ -2,7 +2,7 @@ class PowerSet:
     def powerSet1(self,set):
         result = [[]]
         for x in set:
-            # print 'For x=',x,[subset + [x] for subset in result]
+            print 'For x=',x,[subset + [x] for subset in result]
             result.extend([subset + [x] for subset in result])
         return result
 
@@ -25,6 +25,6 @@ class PowerSet:
 
 ans = PowerSet()
 print ans.powerSet1([1,2,3])
-print ans.powerSet2([1,2,3])
+# print ans.powerSet2([1,2,3])
 # print ans.powerSet1(['a','b','c','d'])
 

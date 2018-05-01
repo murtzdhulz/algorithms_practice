@@ -11,6 +11,7 @@ def LIS(arr):
 def LIS_optimal(arr):
     T = []
     for n in arr:
+        print n, T
         if len(T)==0 or n > T[-1]:
             T.append(n)
         else:
@@ -18,12 +19,13 @@ def LIS_optimal(arr):
             j=len(T)-1
             while i<j:
                 mid=(i+j)/2
-                if n < T[mid]:
+                if T[mid]<n:
                     i = mid+1
                 else:
                     j = mid
             T[j]=n
-    return len(T)
+    return len(T), T
 
-print LIS([100, -10, 10, 22, 9, 33, 21, 10, 41, 60, 80])
-print LIS_optimal([100, -10, 10, 22, 9, 33, 21, 10, 41, 60, 80])
+# print LIS([100, -10, 10, 22, 9, 33, 21, 10, 41, 60, 80])
+# print LIS_optimal([100, -10, 10, 22, 9, 33, 21, 10, 41, 60, 80])
+print LIS_optimal([9,1,3,7,8,5,20])

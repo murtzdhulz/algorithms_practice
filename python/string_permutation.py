@@ -29,10 +29,11 @@ def string_permute3(s,start,end,result):
             s[start],s[i]=s[i],s[start]
     return result
 
-string='ABCD'
-string_permute1(list(string),0,len(string)-1)
-print
-string_permute2(list(string),len(string)-1)
-print
+string='ABC'
+# string_permute1(list(string),0,len(string)-1)
+# print
+# string_permute2(list(string),len(string)-1)
+# print
 result=string_permute3(list(string),0,len(string)-1,[])
-print result,len(result)
+print result
+# print len(result)

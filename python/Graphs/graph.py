@@ -26,7 +26,7 @@ class Graph:
     The structure is:
     Graph consists of a dictionary of keys (integer values)
     Each key maps to a Vertex object
-    Vertex object has a connected_to dictionary which has keys as other Vertex objects and vale as the weight measure
+    Vertex object has a connected_to dictionary which has keys as other Vertex objects and value as the weight measure
     """
 
     def __init__(self):
